@@ -5,6 +5,7 @@ import { RiMap2Line } from 'react-icons/ri'
 import { BiMessageDetail } from 'react-icons/bi'
 import { GiBatwingEmblem } from 'react-icons/gi'
 import { FiSearch } from 'react-icons/fi'
+import Reports from './components/Reports'
 const App = () => {
   return (
     <>
@@ -68,7 +69,7 @@ const App = () => {
 one
           </div>
           <div className='grid-item two'>
-two
+<Reports />
           </div>
           <div className='grid-item three'>
 three
