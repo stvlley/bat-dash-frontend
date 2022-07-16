@@ -12,6 +12,7 @@ body {
   font-family: monospace;
 }
 
+
 #sidebar {
   transition: 300ms width;
   background-color: #cfcfcf;
@@ -69,8 +70,8 @@ body {
   margin-left: 200px;
   box-sizing: border-box;
   height: 900px;
-  width: 1500px;
-  padding: 20px 25px;
+  width: full;
+  padding: 20px 30px;
   transition: 400ms margin-left;
 
 }
@@ -128,11 +129,24 @@ body {
   grid-template-columns: auto 75%;
   max-height: 900px;
 }
+.grid-item-two {
+  margin: 0;
+  height: 400px;
+  box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  padding: 50px;
+}
 .grid-item {
   height: 400px;
   box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.2);
   border-radius: 25px;
   padding: 50px;
+}
+.grid-item-four {
+ 
+  box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  padding: 0px;
 }
 @media (max-width: 1400px) {
   #grid-container {

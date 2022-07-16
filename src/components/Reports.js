@@ -16,7 +16,7 @@ function Reports() {
   return (
     <div className="App">
       <GridComponent
-      style={{ backgroundColor: '#00fbff'}} 
+      style={{ backgroundColor: '#00fbff', borderRadius: '5px'}} 
       pageSettings={{ pageSize: 6}}
       allowPaging={true}
       allowGrouping={true} 

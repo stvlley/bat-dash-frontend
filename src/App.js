@@ -6,6 +6,7 @@ import { BiMessageDetail } from 'react-icons/bi'
 import { GiBatwingEmblem } from 'react-icons/gi'
 import { FiSearch } from 'react-icons/fi'
 import Reports from './components/Reports'
+import Map from './components/Map'
 const App = () => {
   return (
     <>
@@ -68,14 +69,14 @@ const App = () => {
           <div className='grid-item one'>
 one
           </div>
-          <div className='grid-item two'>
+          <div className='grid-item-two'>
 <Reports />
           </div>
           <div className='grid-item three'>
 three
           </div>
-          <div className='grid-item four'>
-four
+          <div className='grid-item-four'>
+<Map />
           </div>
         </section>
       </section>
@@ -84,3 +85,4 @@ four
 }
 
 export default App
+
