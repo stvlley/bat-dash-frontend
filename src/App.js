@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect} from 'react'
 import { AiOutlineControl, AiOutlineBarChart, AiOutlineSearch } from 'react-icons/ai'
 import { CgNotes } from 'react-icons/cg'
 import { RiMap2Line } from 'react-icons/ri'
@@ -7,7 +7,26 @@ import { GiBatwingEmblem } from 'react-icons/gi'
 import { FiSearch } from 'react-icons/fi'
 import Reports from './components/Reports'
 import Map from './components/Map'
+import Login from './components/Login'
+import Logout from './components/Logout'
+import { gapi } from 'gapi-script'
+const clientId = '900574423878-1mvut7id0n76v7g9m7iq025gfs33nnna.apps.googleusercontent.com'
+
 const App = () => {
+
+  useEffect(() => {
+    function start() {
+      gapi.client.init({
+        clientId: clientId,
+        scope: ''
+      })
+    };
+  
+    gapi.load('client:auth2', start)
+  }, [])
+  
+
+
   return (
     <>
       <section id='sidebar'>
@@ -60,6 +79,8 @@ const App = () => {
             </div>
           </div>
           <span className='action-icons'>
+            <Logout />
+          <Login />
             <div className='action-icon-one'></div>
             <div className='action-icon-two'></div>
           </span>
