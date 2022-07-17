@@ -14,10 +14,10 @@ function Reports() {
   console.log(reports)
 
   return (
-    <div className="App">
+    <div className="reports">
       <GridComponent
       style={{ backgroundColor: '#00fbff', borderRadius: '5px'}} 
-      pageSettings={{ pageSize: 6}}
+      pageSettings={{ pageSize: 8}}
       allowPaging={true}
       allowGrouping={true} 
       allowFiltering={true}

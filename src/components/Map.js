@@ -8,8 +8,8 @@ const mapContainerStyle = {
     borderRadius: '25px',
 }
 const center = {
-    lat: 31.968599,
-    lng: -99.901810,
+    lat: 30.2672,
+    lng: -97.7431,
 }
 
 export default function GoogleMaps() {
@@ -27,6 +27,8 @@ export default function GoogleMaps() {
         mapContainerStyle={mapContainerStyle} 
         zoom={11} 
         center={center} 
-        />
+        >
+            
+        </GoogleMap>
     )
 }

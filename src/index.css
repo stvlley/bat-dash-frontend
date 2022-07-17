@@ -129,12 +129,15 @@ body {
   grid-template-columns: auto 75%;
   max-height: 900px;
 }
+.reports {
+}
 .grid-item-two {
+  background-color: rgb(157, 225, 227);
   margin: 0;
-  height: 400px;
+  height: 470px;
   box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.2);
   border-radius: 25px;
-  padding: 50px;
+  padding: 15px;
 }
 .grid-item {
   height: 400px;
